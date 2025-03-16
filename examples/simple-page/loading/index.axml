@@ -1,0 +1,4 @@
+<view>
+  <text>loading</text>
+  <text>loading: {{loading}}</text>
+</view>

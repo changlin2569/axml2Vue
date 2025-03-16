@@ -1,0 +1,25 @@
+<view class="container {{ test }} {{ getClassName() }}">
+  <view class="header">
+    <text class="title">支付宝小程序示例</text>
+  </view>
+  
+  <view class="content content-ss">
+    <view a:if="{{showContent}}" class="content-item">
+      <text>条件渲染内容</text>
+    </view>
+    
+    <view a:for="{{items}}" class="list-item">
+      <text a:key="item.key">{{idx}}: {{item.name}}</text>
+    </view>
+    
+    <button onTap="handleTap" class="btn">点击按钮</button>
+    <button catchTap="handleCatchTap" class="btn-stop">阻止冒泡按钮</button>
+
+    <View>动态获取文本内容：{{ getText() }}</view>
+
+    <!-- 自定义组件 -->
+    <loading id="123" loading="{{true}}" />
+
+    <content message="hello" />
+  </view>
+</view>

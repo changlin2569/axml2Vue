@@ -1,0 +1,31 @@
+{
+  "name": "axml2vue",
+  "version": "1.0.0",
+  "description": "将支付宝小程序 AXML 转换为 Vue 组件",
+  "main": "src/index.js",
+  "bin": {
+    "axml2vue": "./bin/axml2vue"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "convert": "node src/index.js",
+    "test": "node src/index.js --input examples/simple-page --output examples/simple-page-vue"
+  },
+  "keywords": [
+    "axml",
+    "vue",
+    "converter",
+    "小程序",
+    "支付宝小程序"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.26.10",
+    "@babel/traverse": "^7.26.10",
+    "fs-extra": "^10.1.0",
+    "htmlparser2": "^10.0.0",
+    "lodash-es": "^4.17.21",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,9 @@
+<import-sjs from="./index.sjs" name="m" />
+
+<view>js message: {{message}}</view>
+<view>sjs message: {{m.message}}</view>
+<view>formatted value: {{m.format(value)}}</view>
+<img src="{{imageUrl}}" /> 
+
+<view>x: {{x}}</view>
+<view>z: {{z}}</view>
